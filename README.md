@@ -1,8 +1,11 @@
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/example-app-dbt/main/app.py)
 
 # DBT Streamlit Monitoring
 
 This project is for DBT Cloud users who want to be able to share information on how
 their jobs are performing, but without granting Admin access to DBT Cloud directly.
+
+![image](https://user-images.githubusercontent.com/27242399/140054479-fa548407-336c-4019-89fd-efb277712c5c.png)
 
 The app builds a nice interactive dashboard using Streamlit, which allows people to see
 which jobs are completing successfully (or failing) and lets you see the specific steps
@@ -10,9 +13,6 @@ where a job is falling over.
 
 You'll need to add some secrets specific to your environment, but other than that you
 should be up and running right out of the box.
-
-
-
 
 ## Features
 
