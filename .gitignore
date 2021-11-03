@@ -1,0 +1,21 @@
+# Editor
+*.iml
+.swp
+.vscode
+.idea
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache
+.venv/
+.coverage
+.mypy_cache
+.coveragerc
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Coverage Report
+/htmlcov
