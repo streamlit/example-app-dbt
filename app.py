@@ -7,6 +7,7 @@ import pandas as pd
 from src.pages.dbt_dashboard import render_page as render_page_dbt_dashboard
 from src.shared.environment import Auth
 
+st.set_page_config(page_icon="⚙️", page_title="DBT Dashboard")
 
 def main():
     # st.set_page_config(layout="wide")
