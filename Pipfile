@@ -5,8 +5,8 @@ name = "pypi"
 
 [dev-packages]
 watchdog = "*"
-black = "== "*"
-flake8 = "== "*"
+black = "*"
+flake8 = "*"
 
 [packages]
 requests = "*"
