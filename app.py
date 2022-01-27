@@ -112,7 +112,7 @@ def set_up_auth():
 
     if not input_user or not input_pass:
         st.info(
-            "💡 Please input your Username and Password (these are your DBT credentials)"
+            "💡 Please add your username and password (these are your DBT credentials)"
         )
         st.image("arrow.png", width=150)
 
