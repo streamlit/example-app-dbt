@@ -1,3 +1,6 @@
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/example-app-dbt/main/app.py)
+
 # DBT Streamlit Monitoring
 
 This app is for DBT **Cloud users** who want to be able to share information on how
