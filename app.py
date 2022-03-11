@@ -86,6 +86,10 @@ def set_up_app():
 
             You can see an example file in `.streamlit/example_secrets.toml`. You will need to copy this file/rename it to `.streamlit/secrets.toml` if you want to use it
 
+            - `USERNAME` - your DBT account username
+            
+            - `PASSWORD` - your DBT account password
+
             - `ACCOUNT_ID` - your DBT account id
 
             - `API_TOKEN` - your DBT API key (for very obvious reasons we don't commit this to version control).
@@ -96,6 +100,7 @@ def set_up_app():
 
             - `PROJECT_REPO_URL_MAPPING` - This is a mapping that maps the dbt adapter you are using (ie, `redshift`) to the git repository where the code is stored, so you can view the queries of tables/tests that have failed in the browser
 
+
             """
         )
     # add an image to the sidebar
@@ -104,20 +109,19 @@ def set_up_app():
 
     st.sidebar.title("Login")
 
-
 def set_up_auth():
 
-    input_user = st.sidebar.text_input("Username")
-    input_pass = st.sidebar.text_input("Password", type="password")
+    # input_user = st.sidebar.text_input("Username")
+    # input_pass = st.sidebar.text_input("Password", type="password")
 
-    if not input_user or not input_pass:
-        st.info(
-            "💡 Please add your username and password (these are your DBT credentials)"
-        )
-        st.image("arrow.png", width=150)
-
-        st.stop()
-    auth = Auth(user=input_user, password=input_pass)
+    #if not input_user or not input_pass:
+    #    st.info(
+    #        "💡 Please add your username and password (these are your DBT credentials)"
+    #    )
+    #    st.image("arrow.png", width=150)
+#
+    #    st.stop()
+    auth = Auth(user=st.secrets["DASHBOARD_USER"], password=st.secrets["DASHBOARD_PASS"])
 
     if not auth.is_auth():
         st.warning("Please, introduce the correct user/pass.")
