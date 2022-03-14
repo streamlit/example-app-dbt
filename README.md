@@ -1,5 +1,4 @@
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/example-app-dbt/main/app.py)
 
 # DBT Streamlit Monitoring
 
@@ -13,7 +12,7 @@ The app allows people to see which jobs:
  - have failed
  - lets you see the specific steps where a job is falling over
 
-![image](https://user-images.githubusercontent.com/27242399/140054479-fa548407-336c-4019-89fd-efb277712c5c.png)
+<img src="https://user-images.githubusercontent.com/27242399/158216453-4a05e261-3e17-4ed8-858d-ab23fd17fbc3.png" width="600"/>
 
 You'll need to add some secrets specific to your environment, but other than that you
 should be up and running right out of the box.
