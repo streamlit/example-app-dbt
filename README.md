@@ -1,4 +1,8 @@
+---
 
+#### Fork 👉 [the DBT app](https://github.com/streamlit/example-app-dbt), follow the installation steps [here](https://github.com/streamlit/example-app-dbt/edit/main/README.md#installation) & deploy it for free on [Streamlit Cloud](https://streamlit.io/cloud)!🎈
+
+---
 
 # DBT Streamlit Monitoring
 
@@ -48,8 +52,10 @@ The app in its current form assumes the presence of a few things which will be c
 each DBT account, and so we put these in secrets.toml inside of .streamlit.
 
 Running streamlit locally will use these secrets (accessible both as environment variables
-and from streamlit.secrets) and if you decide to deploy onto Streamlit for Teams then you
-can use the same format to add your secrets directly into the web interface.
+and from streamlit.secrets) and if you decide to deploy onto [Streamlit Cloud](https://streamlit.io/cloud) then you
+can use the same format to add your secrets directly into the web interface (see screenshot below):
+
+<img src="https://user-images.githubusercontent.com/27242399/158222353-92adffd0-4a73-4cc8-8481-38b6bc5a001d.png" width="600"/>
 
 You can see an example file in `.streamlit/example_secrets.toml`. You will need to copy this file/rename it to `.streamlit/secrets.toml` if you want to use it
 
